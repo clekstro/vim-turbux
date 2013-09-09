@@ -20,10 +20,10 @@ function! s:turbux_command_setting(name, default_value)
   endif
 endfunction
 
-call s:turbux_command_setting("rspec", "rspec")
-call s:turbux_command_setting("test_unit", "ruby -Itest")
-call s:turbux_command_setting("turnip", "rspec -rturnip")
-call s:turbux_command_setting("cucumber", "cucumber -rfeatures")
+call s:turbux_command_setting("rspec", "bundle exec rspec")
+call s:turbux_command_setting("test_unit", "bundle exec ruby -Itest")
+call s:turbux_command_setting("turnip", "bundle exec rspec -rturnip")
+call s:turbux_command_setting("cucumber", "bundle exec cucumber -rfeatures")
 call s:turbux_command_setting("prefix", "")
 " }}}1
 
